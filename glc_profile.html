@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>廣利成 kLC ｜ 半導體設備機殼・散熱機櫃 精密鈑金一條龍</title>
+<meta name="description" content="廣利成股份有限公司（KWAN LI CHENG CO., LTD.）— 半導體設備外殼與散熱機櫃，從設計、鈑金、焊接、表面處理／粉體烤漆到組裝，一條龍服務。1990 年成立，ISO 9001 認證，彰化花壇。">
+<meta property="og:title" content="廣利成 kLC ｜ 半導體設備機殼・散熱機櫃 精密鈑金一條龍">
+<meta property="og:description" content="半導體設備外殼與散熱機櫃，設計到烤漆一條龍。1990 成立｜ISO 9001｜彰化花壇。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#12203A;
+    --navy-2:#1c3157;
+    --cream:#F1EEE4;
+    --cream-2:#e6e1d2;
+    --steel:#8a94a6;
+    --ink:#0d1626;
+    --line:rgba(18,32,58,.14);
+    --accent:#b9541b;
+    --maxw:1120px;
+    --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --disp:"Barlow Semi Condensed","Noto Sans TC",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .mono{font-family:var(--disp);letter-spacing:.14em;text-transform:uppercase}
+
+  /* header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(241,238,228,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{display:flex;align-items:baseline;gap:10px;font-weight:900}
+  .brand .k{font-family:var(--disp);font-size:26px;letter-spacing:.02em;color:var(--navy)}
+  .brand .cn{font-size:15px;letter-spacing:.12em}
+  .nav-cta{
+    font-size:13px;font-weight:700;letter-spacing:.06em;
+    border:1.5px solid var(--navy);border-radius:999px;
+    padding:8px 16px;text-decoration:none;color:var(--navy);
+    transition:.15s;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--navy);color:var(--cream)}
+
+  /* hero */
+  .hero{background:var(--navy);color:var(--cream);position:relative;overflow:hidden}
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(115deg,transparent 55%,rgba(255,255,255,.06) 55%,rgba(255,255,255,.06) 58%,transparent 58%),
+      linear-gradient(115deg,transparent 70%,rgba(255,255,255,.05) 70%,rgba(255,255,255,.05) 72%,transparent 72%);
+    pointer-events:none;
+  }
+  .hero .wrap{position:relative;z-index:1;padding:74px 22px 66px}
+  .eyebrow{
+    font-family:var(--disp);letter-spacing:.22em;text-transform:uppercase;
+    font-size:13px;color:var(--steel);margin-bottom:20px;
+  }
+  .hero h1{
+    font-size:clamp(27px,5vw,48px);
+    line-height:1.3;font-weight:900;letter-spacing:.01em;
+    max-width:24ch;
+  }
+  .hero .en{
+    margin-top:20px;font-size:clamp(14px,2vw,17px);
+    color:#cdd3de;max-width:52ch;font-weight:400;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+  .chip{
+    font-size:12.5px;font-weight:700;letter-spacing:.06em;
+    border:1px solid rgba(255,255,255,.28);border-radius:6px;
+    padding:7px 12px;color:#e9ebf0;
+  }
+  .chip b{color:#fff}
+
+  /* section shell */
+  section.block{padding:64px 0;border-bottom:1px solid var(--line)}
+  .khead{margin-bottom:34px}
+  .khead .tag{
+    font-family:var(--disp);letter-spacing:.2em;text-transform:uppercase;
+    font-size:12.5px;color:var(--accent);font-weight:700;
+  }
+  .khead h2{font-size:clamp(22px,3.6vw,30px);font-weight:900;margin-top:8px;letter-spacing:.02em}
+  .khead p{margin-top:10px;color:#42506a;max-width:60ch}
+
+  /* process */
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:step}
+  .step{
+    background:#fff;border:1px solid var(--line);border-radius:10px;
+    padding:18px 16px 20px;position:relative;
+  }
+  .step::before{
+    counter-increment:step;content:"0" counter(step);
+    font-family:var(--disp);font-size:15px;letter-spacing:.1em;
+    color:var(--accent);font-weight:700;
+  }
+  .step h3{font-size:16px;margin-top:6px;letter-spacing:.04em}
+  .step .en{font-size:12px;color:#6b7689;margin-top:4px;letter-spacing:.03em}
+  .step .d{font-size:12.5px;color:#54607a;margin-top:8px;line-height:1.55}
+
+  /* products */
+  .prods{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .prod{background:var(--navy);color:var(--cream);border-radius:10px;padding:22px 18px 24px}
+  .prod h3{font-size:17px;letter-spacing:.05em}
+  .prod .en{font-size:12px;color:#aab2c2;margin-top:6px;letter-spacing:.04em}
+  .prod p{font-size:13px;color:#d4d8e1;margin-top:12px;line-height:1.6}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  figure.shot{
+    background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;
+    cursor:zoom-in;transition:transform .15s,box-shadow .15s;
+  }
+  figure.shot:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(18,32,58,.14)}
+  figure.shot img{aspect-ratio:4/3;object-fit:cover;width:100%;background:var(--cream-2)}
+  figure.shot figcaption{padding:12px 14px 14px}
+  figure.shot .cn{font-size:13.5px;font-weight:700;letter-spacing:.02em}
+  figure.shot .en{font-size:11.5px;color:#6b7689;margin-top:3px;letter-spacing:.03em}
+
+  /* lightbox */
+  .lb{
+    position:fixed;inset:0;background:rgba(9,14,25,.92);z-index:100;
+    display:none;align-items:center;justify-content:center;padding:28px;
+  }
+  .lb.open{display:flex}
+  .lb img{max-width:100%;max-height:100%;border-radius:6px}
+  .lb button{
+    position:absolute;top:18px;right:22px;background:none;border:0;
+    color:#fff;font-size:34px;line-height:1;cursor:pointer;font-family:var(--disp);
+  }
+
+  /* contact / share */
+  .contact{display:grid;grid-template-columns:1.3fr .9fr;gap:40px;align-items:start}
+  .rows{display:grid;gap:2px}
+  .row{display:grid;grid-template-columns:104px 1fr;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+  .row .lab{font-family:var(--disp);letter-spacing:.12em;text-transform:uppercase;font-size:12px;color:#6b7689;padding-top:2px}
+  .row a{color:var(--navy);font-weight:700;text-decoration:none;word-break:break-all}
+  .row a:hover{text-decoration:underline}
+  .btnrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:14px;font-weight:700;letter-spacing:.04em;text-decoration:none;
+    padding:12px 20px;border-radius:8px;transition:.15s;
+  }
+  .btn.solid{background:var(--navy);color:var(--cream)}
+  .btn.solid:hover{background:var(--navy-2)}
+  .btn.ghost{border:1.5px solid var(--navy);color:var(--navy)}
+  .btn.ghost:hover{background:var(--navy);color:var(--cream)}
+
+  .share{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:22px;text-align:center;
+  }
+  .share img{width:190px;margin:6px auto 0;border-radius:8px}
+  .share .cn{font-weight:700;font-size:14px;letter-spacing:.03em}
+  .share .en{font-size:11.5px;color:#6b7689;margin-top:2px}
+  .share .hint{font-size:12px;color:#54607a;margin-top:12px;line-height:1.5}
+
+  footer{background:var(--navy);color:#c9cfdb;font-size:13px}
+  footer .wrap{padding:34px 22px;display:flex;flex-wrap:wrap;gap:6px 28px;justify-content:space-between}
+  footer b{color:#fff;letter-spacing:.04em}
+  footer a{color:#c9cfdb}
+
+  @media(max-width:900px){
+    .flow{grid-template-columns:repeat(2,1fr)}
+    .prods{grid-template-columns:repeat(2,1fr)}
+    .gal{grid-template-columns:repeat(2,1fr)}
+    .contact{grid-template-columns:1fr;gap:28px}
+  }
+  @media(max-width:560px){
+    .brand .cn{display:none}
+    .gal{grid-template-columns:1fr}
+    .flow{grid-template-columns:1fr}
+    .row{grid-template-columns:88px 1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="brand">
+      <span class="k">kLC</span>
+      <span class="cn">廣利成股份有限公司</span>
+    </div>
+    <a class="nav-cta" href="business_card.html">業務電子名片 ›</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Precision Sheet Metal · Changhua, Taiwan · Since 1990</div>
+    <h1>半導體設備外殼與散熱機櫃，<br>設計到烤漆一條龍。</h1>
+    <p class="en">Turnkey precision sheet-metal enclosures &amp; thermal cabinets for semiconductor
+      equipment — design, sheet-metal fabrication, welding, powder-coating and assembly under one roof.</p>
+    <div class="chips">
+      <span class="chip"><b>1990</b> 成立 Established</span>
+      <span class="chip"><b>ISO 9001</b> 品質認證</span>
+      <span class="chip"><b>彰化・花壇</b> Changhua</span>
+      <span class="chip"><b>鈑金 × 焊接 × 烤漆</b> 一條龍</span>
+    </div>
+  </div>
+</div>
+
+<section class="block" id="flow">
+  <div class="wrap">
+    <div class="khead">
+      <div class="tag">One-stop Process</div>
+      <h2>一條龍服務流程</h2>
+      <p>從一張圖面到可直接上線的成品——每一道工序都在自有廠房內完成，交期與品質一手掌握。</p>
+    </div>
+    <div class="flow">
+      <div class="step">
+        <h3>設計 / 展開</h3>
+        <div class="en">Design &amp; DFM</div>
+        <div class="d">依設備需求做機構設計、鈑金展開與圖面確認。</div>
+      </div>
+      <div class="step">
+        <h3>鈑金加工</h3>
+        <div class="en">Laser · CNC Bending</div>
+        <div class="d">雷射切割、折床，尺寸精度穩定。</div>
+      </div>
+      <div class="step">
+        <h3>焊接 / 組立</h3>
+        <div class="en">Welding</div>
+        <div class="d">CO₂／氬焊、植釘、研磨，框架結構強度到位。</div>
+      </div>
+      <div class="step">
+        <h3>表面處理 / 烤漆</h3>
+        <div class="en">Powder Coating</div>
+        <div class="d">前處理、粉體烤漆自有塗裝線，平光／垂紋／色粉可依需求指定。</div>
+      </div>
+      <div class="step">
+        <h3>組裝 / 出貨</h3>
+        <div class="en">Assembly &amp; Ship</div>
+        <div class="d">配件組裝、包裝、上腳輪，完工檢驗後出貨。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="products">
+  <div class="wrap">
+    <div class="khead">
+      <div class="tag">What We Build</div>
+      <h2>主打品項</h2>
+      <p>半導體及各類設備機械的鈑金外觀件與結構件，量少樣多、客製打樣皆可。</p>
+    </div>
+    <div class="prods">
+      <div class="prod">
+        <h3>半導體設備機殼</h3>
+        <div class="en">Equipment Enclosures</div>
+        <p>設備外觀機殼、鈑金護罩，開孔、線槽、觀察窗一次到位。</p>
+      </div>
+      <div class="prod">
+        <h3>散熱機櫃</h3>
+        <div class="en">Thermal Cabinets</div>
+        <p>電控 / 散熱機櫃，含風道、濾網、門板與腳輪整合。</p>
+      </div>
+      <div class="prod">
+        <h3>機台護罩 / 安全罩</h3>
+        <div class="en">Machine Covers</div>
+        <p>設備防護鈑金件、鈑金門、觀景窗框，兼顧外觀與防護。</p>
+      </div>
+      <div class="prod">
+        <h3>精密鈑金結構件</h3>
+        <div class="en">Structural Weldments</div>
+        <p>機台底座、支撐框架等結構件，焊接後整體烤漆。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="gallery">
+  <div class="wrap">
+    <div class="khead">
+      <div class="tag">In-house Process</div>
+      <h2>廠內製程實拍</h2>
+      <p>以下為廠內鈑金焊接與粉體烤漆塗裝線實拍。<br>完整的半導體設備機殼與散熱機櫃作品，因涉及客戶保密，歡迎親臨攤位或來電洽詢。</p>
+    </div>
+    <div class="gal">
+      <figure class="shot"><img src="img/p1-welded-frame.jpg" alt="鈑金焊接框架製程" loading="lazy">
+        <figcaption><div class="cn">鈑金焊接框架</div><div class="en">Welded frame fabrication</div></figcaption></figure>
+      <figure class="shot"><img src="img/p2-coating-line.jpg" alt="自有粉體烤漆塗裝線" loading="lazy">
+        <figcaption><div class="cn">自有粉體烤漆塗裝線</div><div class="en">In-house powder-coating line</div></figcaption></figure>
+      <figure class="shot"><img src="img/p3-coating-parts.jpg" alt="塗裝線上的鈑金件" loading="lazy">
+        <figcaption><div class="cn">塗裝線上的鈑金件</div><div class="en">Sheet-metal parts on the coating line</div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <div class="wrap">
+    <div class="khead">
+      <div class="tag">Contact</div>
+      <h2>聯絡我們</h2>
+    </div>
+    <div class="contact">
+      <div>
+        <div class="rows">
+          <div class="row"><span class="lab">Company</span><span>廣利成股份有限公司　KWAN LI CHENG CO., LTD.</span></div>
+          <div class="row"><span class="lab">Contact</span><span>紀曉菁　CHI HSIAO CHING ／ 業務經理 Sales Manager</span></div>
+          <div class="row"><span class="lab">Mobile</span><a href="tel:+886921258767">0921-258-767</a></div>
+          <div class="row"><span class="lab">Tel</span><a href="tel:+88647873712">04-7873712</a></div>
+          <div class="row"><span class="lab">Email</span><a href="mailto:klccdltd@ms10.hinet.net">klccdltd@ms10.hinet.net</a></div>
+          <div class="row"><span class="lab">Web</span><a href="http://www.klccdltd.com/index.php?lang=tw" target="_blank" rel="noopener">www.klccdltd.com</a></div>
+          <div class="row"><span class="lab">Address</span><span>彰化縣花壇鄉南方一巷385號<br>No. 385, Nanfang 1st Ln., Huatan Twp., Changhua County, Taiwan</span></div>
+        </div>
+        <div class="btnrow">
+          <a class="btn solid" href="business_card.html">開啟電子名片 · 加入聯絡人</a>
+          <a class="btn ghost" href="mailto:klccdltd@ms10.hinet.net">寄 Email 詢價</a>
+        </div>
+      </div>
+      <div class="share">
+        <img src="img/qr_company_profile.png" alt="本頁 QR code">
+        <div class="cn">掃我看這一頁</div>
+        <div class="en">Scan for this company / work page</div>
+        <div class="hint">把這張 QR 放進簡報或名片，對方掃描即可看到本頁。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>廣利成 kLC</b>　半導體設備機殼・散熱機櫃・精密鈑金一條龍</span>
+    <span>© 1990–2026 KWAN LI CHENG CO., LTD.　<a href="http://www.klccdltd.com/index.php?lang=tw" target="_blank" rel="noopener">www.klccdltd.com</a></span>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><button id="lbClose" aria-label="關閉">×</button><img id="lbImg" src="" alt=""></div>
+
+<script>
+  (function(){
+    var lb=document.getElementById('lb'),img=document.getElementById('lbImg');
+    document.querySelectorAll('figure.shot').forEach(function(f){
+      f.addEventListener('click',function(){
+        var s=f.querySelector('img');
+        img.src=s.getAttribute('src');
+        img.alt=s.alt;
+        lb.classList.add('open');
+        document.body.style.overflow='hidden';
+      });
+    });
+    function close(){lb.classList.remove('open');img.src='';document.body.style.overflow=''}
+    document.getElementById('lbClose').addEventListener('click',close);
+    lb.addEventListener('click',function(e){if(e.target===lb)close()});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  })();
+</script>
+
+</body>
+</html>
